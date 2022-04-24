@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+import socket
+import pyfiglet
+from termcolor import colored
+
+ascii_banner = pyfiglet.figlet_format("Cozy Fox")
+print(ascii_banner)
+print("________ Welcome to Python ________")
+print("")
+
+domain = input("What's the domain?\n")
+ip = socket.gethostbyname(domain)
+
+print('The DNS of', domain, 'is: ', ip)
+
+ascii_banner2 = pyfiglet.figlet_format("END")
+print(ascii_banner2)
